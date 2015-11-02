@@ -1,0 +1,364 @@
+/***********************************************/
+/*Basic clearfixes and floats*/
+/***********************************************/
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+/***********************************************/
+/*Styling for index.html page*/
+/***********************************************/
+html, 
+body, 
+.intro {
+  height: 100%;
+  box-sizing: border-box;
+/*  font-family: Titillium Web;*/
+  font-family: Crimson Text;
+}
+
+#bodyPic {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	color: white;
+  margin: 20px auto 0 auto;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h4 {
+  margin: 0;
+}
+
+.indexBackground {
+	background-color: rgba(0, 0, 0, 0.7);
+	margin: 4%;
+	min-width: 90%;
+	min-height: 100%;
+}
+
+.intro {
+  width: 40%;
+  height: 80%;
+  text-align: right;
+  margin-top: 10%;
+  margin-right: 1%;
+}
+
+.column {
+  height: 100%;
+  width: 100%;
+}
+
+.menuCol {
+  float: left;
+  vertical-align: top;
+  padding: 40px 40px;
+  width: 140px;
+  height: 140px;
+}
+
+.textCenter {
+  text-align: center;
+  position: center;
+  margin: 0 auto;
+  display: block;
+}
+
+.resume {
+  background-color: #2E8B57;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.skills {
+  background-color: #6A5ACD;
+  opacity: 0.9;
+}
+
+.video {
+  background-color: orange;
+  opacity: 0.9;
+}
+
+
+
+/********************************************************************/
+/*Styling for resume html page*/
+/********************************************************************/
+
+.bdResume {
+  background-image: url("../images/backgroundimg.png");
+  background-size: 20px 22px;
+  background-repeat: repeat;
+}
+
+
+/********************************************************************/
+/*Navigation related*/
+/********************************************************************/
+
+.hvr-shutter-in-vertical {
+  float: left;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  background: #2098d1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  padding: 10px 25px;
+}
+.hvr-shutter-in-vertical:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e1e1e1;
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-in-vertical:hover, .hvr-shutter-in-vertical:focus, .hvr-shutter-in-vertical:active {
+  color: white;
+}
+.hvr-shutter-in-vertical:hover:before, .hvr-shutter-in-vertical:focus:before, .hvr-shutter-in-vertical:active:before {
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+.navResume {
+  margin-right: 2%;
+  background-color: #e1e1e1;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+
+nav ul {
+  margin-top: 0;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 13px;
+}
+
+/********************************************************************/
+/*Plus minus animation related styling*/
+/********************************************************************/
+
+.hidden {
+  display: none;
+}
+
+.buttonResume {
+  height: 32px;
+  width: 32px;
+  border: none;
+}
+
+.buttonPlus {
+  background: url(../images/icons/plus.png) no-repeat;
+}
+
+.icon-trigger:after {
+  background: url(../images/icons/plus.png) no-repeat;
+}
+
+.icon-trigger.closed:after {
+  background: url(../images/icons/minus.png) no-repeat;
+}
+
+.buttonMinus {
+  background: url(../images/icons/minus.png) no-repeat;
+}
+
+.plusMinusAlignmentH,
+.plusMinusAlignmentP {
+  margin: 0px;
+  padding: 0px;
+}
+
+.plusMinusAlignmentH {
+  margin-top: 0.1em;
+}
+
+.plusMinusAlignmentP {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 0.5em;
+}
+
+/************************************************/
+/*Resume html page main container*/
+/************************************************/
+.cvTemplateBody {
+  border-style: dashed;
+  border: 1px solid black;
+  width: 85%;
+  float: right;
+  margin-right: 2%;
+  color: black;
+  margin-top: 18px;
+  background-color: white;
+  padding: 0.5em;
+}
+
+.cityAlign {
+  margin-top: 1.7em;
+}
+
+/********************************************************/
+/*Individual containers per work experience or education*/
+/********************************************************/
+
+.workExperienceCont {
+  border: 1px solid black;
+  margin-top: 5em; 
+}
+
+/***************************/
+/*Resume columns formatting*/
+/***************************/
+.leftColumn,
+.middleColumn,
+.rightColumn {
+  border: 1px solid black;
+  position: relative;
+}
+
+.leftColumn {
+  width: 17%;
+}
+
+.middleColumn {
+  width: 4%;
+  min-width: 4%;
+  text-align: center;
+}
+.rightColumn {
+  width: 78%;
+}
+/******************************************************************************/
+/*Skillset progress bar, alignments, etc..*/
+/******************************************************************************/
+@import "compass/css3";
+
+.progress {
+  width: 15em;
+  height: 1.3em;
+}
+.progress-wrap {
+  background: #f80;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}  
+  .progress-bar {
+    background: #ddd;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+.barAlign {
+  text-align: center;
+  padding: 0 1.5em;
+  margin: 0 2em;
+}
+/******************************************************************************/
+/*Skillset progress bar, alignments, etc..*/
+/******************************************************************************/
+
+.certAlign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 130px;
+  width: 250px;
+  border: 1px solid black;
+}
+
+.certifAlign {
+  margin-top: 10em;
+  border: 1px solid black;
+}
+
+/******************************************************************************/
+/*Certificates animation..*/
+/******************************************************************************/
+
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+span {
+  top: 0px;
+  position: relative;
+  transition: 350ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+}
+
+a.btn:hover span.label {
+  top: -100px;
+  transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+  z-index: -1;
+}
+.fa {
+  position: absolute;
+  color: red;
+}
+
+a.btn:hover span.fa-facebook {
+  top: 30px;
+  transition: 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) all;
+  z-index: -1;
+  text-align: center;
+  position: relative;
+}
